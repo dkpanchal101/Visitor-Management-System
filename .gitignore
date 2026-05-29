@@ -1,0 +1,55 @@
+# ---------------------------------------
+# 1. DEPENDENCIES (NEVER Upload These)
+# ---------------------------------------
+node_modules/
+**/node_modules/
+
+# ---------------------------------------
+# 2. ENVIRONMENT VARIABLES (Security Risk)
+# ---------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ---------------------------------------
+# DATABASE FILES (Should not be committed)
+# ---------------------------------------
+*.db
+*.db-wal
+*.db-shm
+backend/database/*.db
+backend/database/*.db-*
+
+# ---------------------------------------
+# UPLOADED MEDIA (local evidence — do not commit)
+# ---------------------------------------
+backend/media/snapshots/
+backend/media/videos/
+backend/media/uploads/
+backend/media/*
+!backend/media/.gitkeep
+
+# ---------------------------------------
+# 3. BUILD OUTPUTS (Frontend Production Files)
+# ---------------------------------------
+build/
+dist/
+
+# ---------------------------------------
+# 4. LOGS & DEBUGGING
+# ---------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# ---------------------------------------
+# 5. OS SYSTEM FILES (Junk Files)
+# ---------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
